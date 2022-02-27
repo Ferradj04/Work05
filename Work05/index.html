@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mercedes Benz Responsive Header Model</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="import" href="assets/Daimler CAC Regular.ttf">
+    </head>
+    <body>
+        <div class="hero">
+            <div class="hero-background">
+                <svg class="rectangle-01-M" width="217" height="360" viewBox="0 0 217 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M216.2 0H0V360H216.2V0Z" fill="black"/>
+                </svg>
+                <svg class="rectangle-02-M" width="43" height="270" viewBox="0 0 43 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M42.8 0H0V269.6H42.8V0Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="hero-content">
+               <div class="header">
+                   <a href="#"><img class="logo" src="assets/Logo.svg" alt="Mercedes Logo"></a>
+                   <ul class="header-ul">
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">All models</a></li>
+                       <li><a href="#">About</a></li>
+                   </ul>
+                   <svg class="research" width="50" height="45" viewBox="0 0 71 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24.5" cy="24.5" r="21.5" stroke="white" stroke-width="6"/>
+                        <rect x="37.5725" y="40.4374" width="6" height="37.1284" transform="rotate(-51.6692 37.5725 40.4374)" fill="white"/>
+                   </svg>
+                    
+                   <nav>
+                        <svg class="close" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M42.8568 0.142807L0 42.9996L7.14281 50.1425L49.9996 7.28561L42.8568 0.142807Z" fill="black"/>
+                            <path d="M0.000351352 7.14281L42.8572 49.9996L50 42.8568L7.14316 2.42199e-07L0.000351352 7.14281Z" fill="black"/>
+                        </svg>
+                        <ul class="nav-ul">
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">All models</a></li>
+                           <li><a href="#">About</a></li>
+                       </ul>
+                   </nav>
+                   <svg class="menu" width="50" height="36" viewBox="0 0 50 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 0H0V8.325H50V0Z" fill="white"/>
+                        <path d="M50 13.4H0V21.725H50V13.4Z" fill="white"/>
+                        <path d="M50 26.8H0V35.125H50V26.8Z" fill="white"/>
+                    </svg>
+                </div>
+               <div class="wrapper">
+                   <div class="centered-wrapper">
+                        <div class="title-text-button">
+                            <h1 class="title">Be the king of the road</h1>
+                            <p class="text">Discover the last features of Mercedes Benz AMG-GT and all properties and prices of the new model of AMG GT series by Clicking on the link below.</p>
+                            <div> <a class="button" href="#">Discover it !</a></div>
+                        </div>
+                        <img class="image" src="assets/car.png" alt="Mercedes AMG Gt">
+                   </div>
+               </div>
+               <div class="footer">
+                   <div class="social-media-icons">
+                        <a href="#"><img src="assets/fb.svg" alt="Facebook"></a>
+                        <a href="#"><img src="assets/twitter.svg" alt="Twitter"></a>
+                        <a href="#"><img src="assets/in.svg" alt="Instagram"></a>
+                        <a href="#"><img src="assets/link-in.svg" alt="LinkedIn"></a>
+                   </div>
+                   <svg class="shape"  viewBox="0 0 100 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_18_6814)">
+                            <path d="M27.4 0H0V2.7H27.4V0Z" fill="white"/>
+                            <path d="M100 0H31.5V2.7H100V0Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_18_6814">
+                            <rect width="100" height="2.7" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+           </div>
+        </div>
+        <script>
+            const menu = document.querySelector('.menu');
+            const nav = document.querySelector('nav');
+            const close = document.querySelector('.close');
+            menu.addEventListener('click',()=>{
+                nav.style.transform="translateX(0)";
+                nav.style.transition="0.5s ease-in-out";
+            });
+            close.addEventListener('click',()=>{
+                nav.style.transform="translateX(100%)";
+                nav.style.transition="0.5s ease-in-out";
+            });
+        </script>    
+    </body>
+   
+</html>

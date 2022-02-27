@@ -1,0 +1,294 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Daimler Ca';
+}
+@font-face
+{
+    font-family: 'Daimler Ca';
+    src: url('../assets/Daimler\ CAC\ Regular.ttf');
+}
+.hero 
+{
+    display: flex;
+}
+.hero-background 
+{
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    background-color: #333333;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    .rectangle-01-M 
+    {
+        position: absolute;
+        top: 25%;
+    }
+    .rectangle-02-M 
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+.hero-content 
+{
+   
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    .header 
+    {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        top: 0;
+        width: 100%;
+        .logo 
+        {
+            width: 12.20rem;
+            margin-top: 1.6em;
+            margin-left: 1.6em;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+        .menu 
+        {
+            width: 1.87rem;
+            margin-top: 1.6em;
+            margin-right: 1.6em;
+            cursor: pointer;
+        }
+        nav 
+        {
+            position: fixed;
+            width: 50%;
+            height: 100vh;
+            top: 0;
+            right: 0;
+            background-color: #fff;
+            display: flex;
+            z-index: 2;
+            transform: translateX(100%);
+            .close 
+            {
+                position: absolute;
+                top: 1.6em;
+                right: 1.6em;
+                cursor: pointer;
+            }
+            ul 
+            {
+                list-style: none;
+                margin-top: auto;
+                margin-bottom: auto;
+                width: 100%;
+                a 
+                {
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    font-size: 2.5rem;
+                    padding: 1.2rem;
+                    transition: 0.2s ease-in-out;
+                    &:hover 
+                    {
+                        background-color: #b6b6b6;
+                        transition: 0.2s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    .wrapper
+    {
+        margin: auto;
+        display: flex;
+        .centered-wrapper 
+        {
+            margin: auto;
+            .title-text-button 
+            {
+                color: white;
+                text-align: center;
+                font-size: 1.0rem;
+                width: 60vw;
+                .title 
+                {
+                    line-height: 1.2em;
+                }
+                .text 
+                {
+                    margin-bottom: 1.2em;
+                    line-height: 1.2em;
+                }
+                .button
+                {
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: transparent;
+                    border: 0.1em solid white;
+                    padding-left: 4.37em;
+                    padding-right: 4.37em;
+                    padding-top: 0.5em;
+                    padding-bottom: 0.5em;
+                    transition: 0.2s ease-in-out;
+                    user-select: none;
+                    &:hover
+                    {
+                        color: black;
+                        background-color: #fff;
+                        transition: 0.2s ease-in-out;
+                    }
+                }
+        }
+        .image 
+        {
+            width: 60vw;
+            margin-top: 5.6rem;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+        animation: moveUp 0.5s ease-in-out;
+    }
+    
+}
+    .footer 
+    {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .shape 
+        {
+            width: 100px;
+            height: 3px;
+            position: absolute;
+            bottom: 1.6em;
+            right: 1.6em;
+        }
+        .social-media-icons 
+        {
+            margin-left: 1.6em;
+            margin-bottom: 1.6em;
+            user-select: none;
+            img 
+            {
+                width: 2.6rem;
+                margin-top: 0;
+                user-select: none;
+                margin-right: 0.5em;
+            }
+        }
+    }
+}
+.open-nav 
+{
+    transform: translateX(0);
+}
+@keyframes moveUp
+{
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+}
+@media  screen and  (max-width:800px) 
+{
+    .header 
+    {
+        
+        .header-ul
+        {
+            display: none;
+        }
+        .research 
+        {
+            display: none;
+        }
+    }
+}
+@media only screen and  (min-width:800px)
+{
+    .menu 
+    {
+        display: none;
+    }
+    nav 
+    {
+       display: none;
+    }
+    ul 
+    {
+        list-style:none ;
+        position: relative;
+        margin-top: 1.6em;
+        width: auto;
+        li 
+        {
+            display: inline;
+            margin-left: 1.2rem;
+            margin-right: 1.2rem;
+            a 
+            {
+                color: #fff;
+                text-decoration: none;
+                font-size: 2.5rem;
+            }
+        }
+    }
+    .research 
+    {
+        margin-top: 1.6em;
+        margin-right: 1.6em;
+        cursor: pointer;
+    }
+    .centered-wrapper 
+    {
+        display: block;
+    }
+    .hero-content .wrapper .centered-wrapper .image
+    {
+        width: 35rem;
+    }
+    .hero-content .wrapper .centered-wrapper 
+    {
+        .title 
+        {
+            text-align: left;
+        }
+        .text
+        {
+            text-align: left;
+            width: 30.2rem;
+        }
+        .button 
+        {
+            display: none;
+        }
+    }
+}
+@media only screen and  (min-width:1200px)
+{
+    .hero-content 
+    {
+        width: 1200px;
+    }
+}

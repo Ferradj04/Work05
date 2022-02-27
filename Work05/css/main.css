@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Daimler Ca';
+}
+
+@font-face {
+  font-family: 'Daimler Ca';
+  src: url("../assets/Daimler CAC Regular.ttf");
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-background {
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  background-color: #333333;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero-background .rectangle-01-M {
+  position: absolute;
+  top: 25%;
+}
+
+.hero-background .rectangle-02-M {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hero-content {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.hero-content .header {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 0;
+  width: 100%;
+}
+
+.hero-content .header .logo {
+  width: 12.20rem;
+  margin-top: 1.6em;
+  margin-left: 1.6em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+}
+
+.hero-content .header .menu {
+  width: 1.87rem;
+  margin-top: 1.6em;
+  margin-right: 1.6em;
+  cursor: pointer;
+}
+
+.hero-content .header nav {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.hero-content .header nav .close {
+  position: absolute;
+  top: 1.6em;
+  right: 1.6em;
+  cursor: pointer;
+}
+
+.hero-content .header nav ul {
+  list-style: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+.hero-content .header nav ul a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 1.2rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.hero-content .header nav ul a:hover {
+  background-color: #b6b6b6;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.hero-content .wrapper {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-content .wrapper .centered-wrapper {
+  margin: auto;
+  -webkit-animation: moveUp 0.5s ease-in-out;
+          animation: moveUp 0.5s ease-in-out;
+}
+
+.hero-content .wrapper .centered-wrapper .title-text-button {
+  color: white;
+  text-align: center;
+  font-size: 1.0rem;
+  width: 60vw;
+}
+
+.hero-content .wrapper .centered-wrapper .title-text-button .title {
+  line-height: 1.2em;
+}
+
+.hero-content .wrapper .centered-wrapper .title-text-button .text {
+  margin-bottom: 1.2em;
+  line-height: 1.2em;
+}
+
+.hero-content .wrapper .centered-wrapper .title-text-button .button {
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  border: 0.1em solid white;
+  padding-left: 4.37em;
+  padding-right: 4.37em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.hero-content .wrapper .centered-wrapper .title-text-button .button:hover {
+  color: black;
+  background-color: #fff;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.hero-content .wrapper .centered-wrapper .image {
+  width: 60vw;
+  margin-top: 5.6rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+}
+
+.hero-content .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-content .footer .shape {
+  width: 100px;
+  height: 3px;
+  position: absolute;
+  bottom: 1.6em;
+  right: 1.6em;
+}
+
+.hero-content .footer .social-media-icons {
+  margin-left: 1.6em;
+  margin-bottom: 1.6em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.hero-content .footer .social-media-icons img {
+  width: 2.6rem;
+  margin-top: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-right: 0.5em;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@-webkit-keyframes moveUp {
+  from {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100;
+  }
+}
+
+@keyframes moveUp {
+  from {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header .header-ul {
+    display: none;
+  }
+  .header .research {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .menu {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  ul {
+    list-style: none;
+    position: relative;
+    margin-top: 1.6em;
+    width: auto;
+  }
+  ul li {
+    display: inline;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5rem;
+  }
+  .research {
+    margin-top: 1.6em;
+    margin-right: 1.6em;
+    cursor: pointer;
+  }
+  .centered-wrapper {
+    display: block;
+  }
+  .hero-content .wrapper .centered-wrapper .image {
+    width: 35rem;
+  }
+  .hero-content .wrapper .centered-wrapper .title {
+    text-align: left;
+  }
+  .hero-content .wrapper .centered-wrapper .text {
+    text-align: left;
+    width: 30.2rem;
+  }
+  .hero-content .wrapper .centered-wrapper .button {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-content {
+    width: 1200px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
